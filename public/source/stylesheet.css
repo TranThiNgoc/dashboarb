@@ -1,0 +1,23 @@
+.List-Hotel{
+    width: 960px;
+    margin: 0 auto;
+}
+.item {
+    float: left;
+    width: 30%;
+
+
+
+
+}
+.right{
+    float: right;
+    width: 70%;
+
+
+}
+.footer{
+    text-align: center;
+
+}
+
