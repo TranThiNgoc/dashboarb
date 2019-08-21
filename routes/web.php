@@ -50,6 +50,14 @@ Route::get('dangnhap',function (){
 Route::post('login','AuthController@login') -> name('login');
 //Route::get('layout','Pagecontroller@getIndex')->middleware ('Checklogout');
 
-Route::get('Dashbroad',function (){
+//Route::get('Dashbroad',function (){
   //  echo "Bạn đã dang nhap";
-})-> middleware('adminLogout');
+//});//-> middleware('adminLogout');
+Route::get('lienket',function(){
+ $data = App\sanpham::find(1)->category->toArray();
+ var_dump($data);
+});
+Route::get('lienketloaisp',function(){
+    $data = App\category::find(1)->sanpham->toArray();
+    var_dump($data);
+});
