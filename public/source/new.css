@@ -1,0 +1,32 @@
+.header,.nav {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header img {
+    height: 22px;
+    width: 35px;
+}
+.nav{
+    width: 1000%;
+    position: relative;
+    float: left;
+}
+.nav.right{
+    width: 20%;
+    height: 960px;
+    position: relative;
+    display:table-cell ;
+
+}
+.nav.center{
+    width: 80%;
+    height: 300px;
+    display:table-cell ;
+
+}
+.nav.center.Dashboard {
+    width: 80%;
+    height: 60px;
+    padding-left: 20px;
+}
