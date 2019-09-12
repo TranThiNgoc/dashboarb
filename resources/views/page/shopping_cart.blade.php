@@ -23,10 +23,9 @@
                                     Action<span class="caret"> </span>
 
                                 </button>
-{{--                                <ul class="dropdown-menu">--}}
-{{--                                    <li><a href="#">Reduce By 1</a></li>--}}
-{{--                                    <li><a href="#">Reduce All</a></li>--}}
-{{--                                </ul>--}}
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{route('deletecart',['id'=>$sanpham['item']['id']])}}">Clearn Cart</a></li>
+                                </ul>
                             </div>
                         </li>
                     @endforeach
@@ -38,6 +37,8 @@
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
                 <strong> Total:{{$totalPrice}}</strong>
 
+
+
             </div>
         </div>
         <div class="row">
@@ -45,6 +46,7 @@
                 <a  href="{{route('checkout')}}" type="button" class="btn btn-success">Checkout </a>
             </div>
         </div>
+
     @else
         <div class="row">
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">

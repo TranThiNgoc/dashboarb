@@ -72,6 +72,11 @@ Route::get('shopping-cart',[
 
 ]);
 
+Route::get('/delete/{id}',[
+    'as'=>'deletecart',
+    'uses'=>'CartController@getDeleteCart'
+]);
+
 Route::get('/checkout',[
     'as'=>'checkout',
     'uses'=>'CartController@getCheckout'

@@ -5,7 +5,7 @@
         <h1> Check out</h1>
         <h4> Your total:{{$total}}</h4>
         <from action="{{route('checkout')}}" method="post">
-            
+
         </from>
     </div>
     </div>

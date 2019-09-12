@@ -49,6 +49,18 @@ class CartController extends Controller
 //
 //    }
     }
+
+    public  function getDeleteCart($id){
+      $oldCart=Session::has('cart') ? Session::get('cart'):null;
+      $cart=new Cart($oldCart);
+     $cart->clearcart($id);
+    // $cart->delete();
+      //  $cart->clearcart();
+        Session::put('cart',$cart);
+        return redirect()->route('shoppingCart');
+
+    }
+
     public function getCart(){
         if(!Session::has('cart')){
             return view ('page.shopping_cart');

@@ -37,11 +37,11 @@ class cart extends Model
         $this->totalPrice+=$item->DonGia;
 
     }
-    public function clearcart(){
-
-       $this->items=null;
-
-    }
+//    public function clearcart(){
+//
+//    $this->items=null;
+//
+//}
 //    public function reduceByone($id){
 //        $this->items[$id]['id']--;
 //        $this->items[$id]['price']-=$this->items[$id]['item']['price'];
@@ -51,10 +51,10 @@ class cart extends Model
 //            unset($this->items[$id]);
 //        }
 //    }
-//    public function removeItem($id){
-//        $this->totalQty-=$this->items[$id]['qty'];
-//        $this->totalPrice-=$this->items[$id]['price'];
-//        unset($this->items[$id]);
-//    }
+    public function clearcart($id){
+        $this->totalQty-=$this->items[$id]['qty'];
+        $this->totalPrice-=$this->items[$id]['price'];
+        unset($this->items[$id]);
+    }
 }
 

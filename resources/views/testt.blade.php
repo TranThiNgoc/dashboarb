@@ -71,10 +71,12 @@ background: #adb5bd;">
         <div class="Dashboard" style=" width: 100%; height: 60px; padding-left: 20px;">
             <div  style="display: table-cell; padding-left: 20px;" > <p ><span style="font-weight: bold; padding-right: 10px;">Product</span>control pannel </p></div>
 {{--            <div style="display: table-cell; padding-left: 600px;"> Home   > Product</div>--}}
-                <a href="{{route('shoppingCart')}}"><div style="display: table-cell; padding-left: 600px;"> <img src="source/cart.jpg"  href="#" height="22" width="25" style="padding-right: 5px;"/>Gio Hang</div>
-                <span >{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} </span>
+                <a href="{{route('shoppingCart')}}">
+                        <div style="display: table-cell; padding-left: 600px;">
+                            <img src="source/cart.jpg"  href="#" height="22" width="25" style="padding-right: 5px;"/>Gio Hang</div>
+                        <span >{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} </span>
                 </a>
-{{--               <div>--}}
+            {{--               <div>--}}
 {{--                   @if()--}}
 {{--               </div>--}}
 
