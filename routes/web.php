@@ -49,9 +49,32 @@ Route::get('listsp',[
 //   'as'=> 'category',
  //   'uses'=>'Pagecontroller@getcategory'
 //]);
-Route::get('loaisanpham',[
+Route::get('loaisanpham /{type}',[
 	'as'=> 'loai-san-pham',
 	'uses'=>'Pagecontroller@getLoaiSp'
+]);
+Route::get('chi-tiet-san-pham/{id}',[
+    'as'=>'chitietsanpham',
+    'uses'=>'Pagecontroller@getChitiet'
+]);
+Route::get('/',[
+    'as'=> 'san-pham-shop',
+    'uses'=>'CartController@getIndex'
+]);
+Route::get('add-to-cart/{id}',[
+    'as'=>'themgiohang',
+    'uses'=>'CartController@getAddtocart'
+
+    ]);
+Route::get('shopping-cart',[
+    'as'=>'shoppingCart',
+    'uses'=>'CartController@getCart'
+
+]);
+
+Route::get('/checkout',[
+    'as'=>'checkout',
+    'uses'=>'CartController@getCheckout'
 ]);
 //auth
 Route::get('dangnhap',function (){
@@ -121,3 +144,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //route::get('/', 'UserController@getLogin');
 //route::post('/', 'UserController@postLogin');
+Route::get('lu',function (){
+   return view('home');
+});
+//Route::get('cart','CartController');
+//Route::get('addcart/{id}','CartController@addCart')->name('addCart');
+
+
