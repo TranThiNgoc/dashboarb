@@ -24,7 +24,9 @@
 
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{{route('deletecart',['id'=>$sanpham['item']['id']])}}">Clearn Cart</a></li>
+                                    <button><a href="{{route('deletecart',['id'=>$sanpham['item']['id']])}}">Clearn Cart</a></button>
+{{--                                    <button><a href="{{route('deletecart')}}">Clearn Cart</a></button>--}}
+
                                 </ul>
                             </div>
                         </li>
