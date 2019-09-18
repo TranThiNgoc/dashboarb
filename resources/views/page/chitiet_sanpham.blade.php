@@ -11,12 +11,14 @@
                     <p> {{$sanp->MieuTa}}</p>
                     <div class="thumbnail">
                         <p style="color: #1abc9c"> {!! $sanp->DonGia !!} vnd</p>
-                        <div style=" background: #1abc9c;width: 100px;">
-                            <a  href="{{route('themgiohang',$sanp->id)}}" > Add to cart</a>
+                        <div style=" color:white;background-color:sandybrown;width: 100px; ">
+
+                            <a  href="{{route('themgiohang',$sanp->id)}}"  > Add to cart</a>
                         </div>
                     </div>
                 </div>
             </div>
+
 
     </div>
 @endsection

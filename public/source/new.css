@@ -2,13 +2,16 @@
     width: 960px;
     margin: 0 auto;
 }
-
+.footer{
+    width: 960px;
+    margin: 0 auto;
+}
 .header img {
     height: 22px;
     width: 35px;
 }
 .nav{
-    width: 1000%;
+    width: 100%;
     position: relative;
     float: left;
 }
@@ -19,11 +22,26 @@
     display:table-cell ;
 
 }
+.right li a:hover {
+  color:aliceblue;
+    background-color: #1b1e21;
+
+}
+.right li a{
+  text-decoration: none;
+    color: black;
+}
+.right li ul{
+    list-style: none;
+}
 .nav.center{
     width: 80%;
     height: 300px;
     display:table-cell ;
 
+}
+a:hover{
+    color: red;
 }
 .nav.center.Dashboard {
     width: 80%;
