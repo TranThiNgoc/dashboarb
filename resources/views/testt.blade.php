@@ -11,33 +11,24 @@
     <link type="text/css" rel="stylesheet" href="source/new.css">
 </head>
 <body>
-<header style="height: 50px;background-color: skyblue">
-        <ul  class="stu" style="float: right;margin-top: 0px;margin-bottom: 0px;">
-            <img src="source/info1.png" height="22" width="25" style="padding-right: 5px;"/><sub> 4</sub>
-            <img src="source/123.png" height="21" width="25"  style="padding-right: 5px;"/><sub>3</sub>
-            <img src="source/cogai.jpg" alt="..."  height="35" width="40" class="rounded-circle" style="padding-right: 10px;">
-            <img src="source/kk.png" height="23" width="25" style="padding-right: 9px;"/>
-        </ul>
-
+<header  class="header">
+    <ul  class="stu">
+        <img src="source/info1.png"/><sub> 4</sub>
+        <img src="source/123.png"/><sub>3</sub>
+        <img src="source/cogai.jpg" alt="..." class="rounded-circle" style="padding-right: 10px;">
+        <img src="source/kk.png" />
+    </ul>
 
 
 
 </header>
-<nav class="nav" style=" width: 100%; position: relative;
-    float: left; display: block;">
-    <div class="right" style=" width: 20%;
-    height: 960px;
-    position: fixed;
-    top:50px;
-    background-color: #98e1b7;
-
-    ">
+<nav class="nav">
+    <div class="right">
         <div>
-            <input type="text" placeholder="Tim kiem"  style="width: 98%; height: 30px;">
-            <p style="background-color: darkslategray;"></p>
+            <input type="text" placeholder="Tim kiem">
 
         </div>
-        <div  class=" item" style="padding-left: 10px;">
+        <div  class=" item">
 {{--            <nav class="nav flex-column">--}}
 {{--                <li class="nav-item dropdown" >--}}
 {{--                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Product</a>--}}
@@ -99,14 +90,14 @@
 
 
     </div>
-    <div  class="center" style="width: 80%;margin-left: 20%">
-        <div class="Dashboard" style="width:100%;height: 60px; float: left;background-color:gainsboro">
-            <div  style="padding-left: 20px;">
+    <div  class="center">
+        <div class="Dashboard">
+            <div  class="Cart">
                 <div style="display: inline-table">
                     <p style="margin-bottom: 0px;">
                         <span style="font-weight: bold; padding-right: 10px;">Product</span>control pannel </p>
                 </div>
-                <div  class="giohang" style="display: inline-table; float: right ;margin-right: 20px;">
+                <div  class="giohang">
                     <a href="{{route('shoppingCart')}}" style="text-decoration: none" >
                         <div style="padding-top: 5px;">
                             <img src="source/cart.jpg"  href="#" height="25" width="25" style="padding-right: 5px"/>Gio Hang   <span >{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} </span></div>
@@ -127,7 +118,7 @@
 {{--               </div>--}}
 
         </div>
-        <div style="padding-top: 40px;padding-left: 20px;">
+        <div class="Content">
             @yield('content')
         </div>
 

@@ -6,20 +6,65 @@
     width: 960px;
     margin: 0 auto;
 }
-.header img {
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: skyblue
+}
+.header ul{
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px
+
+}
+header ul img{
     height: 22px;
     width: 35px;
+    padding-right: 5px;
 }
 .nav{
     width: 100%;
     position: relative;
     float: left;
+    display: block
 }
-.nav.right{
+.nav div.right{
     width: 20%;
-    height: 960px;
-    position: relative;
+    min-height:960px;
     display:table-cell ;
+    position: fixed;
+    top:50px;
+    background-color: #98e1b7;
+}
+.nav div.right input{
+    width: 98%;
+    height: 30px;
+}
+nav div.right div.item{
+    padding-left: 10px;
+}
+
+.nav div.center{
+    width: 80%;
+    margin-left: 20%
+}
+.nav div.center div.Dashboard{
+    width:100%;
+    height: 60px;
+    float: left;
+    background-color:gainsboro
+}
+.nav div.center div.Dashboard div.Cart{
+    padding-left: 20px;
+}
+.nav div.center div.Dashboard div.giohang{
+    display: inline-table;
+    float: right ;
+    margin-right: 20px;
+}
+.nav div.Content{
+    padding-top: 40px;
+    padding-left: 20px;
 
 }
 .right li a:hover {
